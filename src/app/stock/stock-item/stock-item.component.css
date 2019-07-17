@@ -7,11 +7,11 @@
     padding: 10px;
 }
 
-.stock-container .name h3, .stock-container .name h4 {
+.stock-container .name {
     display: inline-block;
     color: #09697a;
 }
 
 .stock-container .price p {
-    color: #c20606;
+    color: #018f25;
 }

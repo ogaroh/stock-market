@@ -1,8 +1,9 @@
 <div class="stock-container">
     <div class="name">
-        <h3>{{name}}</h3> - <h4>({{code}})</h4>
+        {{name + '(' + code + ')'}}
     </div>
+    <hr>
     <div class="price">
-        <p>Ksh. {{price}}</p>
+        Current Price:  <p>Ksh. {{price}}</p>
     </div>
 </div>
