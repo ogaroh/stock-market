@@ -3,10 +3,10 @@
         {{stock.name + ' - (' + stock.code + ')'}}
     </div>
     <hr>
-    <div class="price" [class]="positiveChange ? 'positive' : 'negative'">
+    <div class="price" [class]="stock.isPositiveChange() ? 'positive' : 'negative'">
         ${{stock.price}}
 
         <button type="button" class="btn btn-info" (click)="toggleFavorite($event)" [disabled]="stock.favorite"><i
-                class="fas fa-plus-circle"></i></button>
+                class="fas fa-plus-circle"></i> Favorites</button>
     </div>
 </div>
