@@ -17,7 +17,7 @@ export class StockItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.name = "APPLE";
+    this.name = 'APPLE';
     this.code = 'AAPL';
     this.price = 120.65;
     this.previousPrice = 101.55;
@@ -26,8 +26,8 @@ export class StockItemComponent implements OnInit {
     this.positiveChange = this.price >= this.previousPrice;
   }
 
-  toggleFavorite() {
-    console.log("Toggling state for this stock.");
+  toggleFavorite(event) {
+    console.log('Toggling state for this stock.', event);
     this.favorite = !this.favorite;
   }
 
