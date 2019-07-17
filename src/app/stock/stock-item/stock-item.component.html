@@ -1,9 +1,10 @@
 <div class="stock-container">
     <div class="name">
-        {{name + '(' + code + ')'}}
+        {{name + ' (' + code + ')'}}
     </div>
     <hr>
-    <div class="price">
-        Current Price:  <p>Ksh. {{price}}</p>
+    <div class="price"
+    [class]="positiveChange ? 'positive' : 'negative'">
+        ${{price}}  
     </div>
 </div>

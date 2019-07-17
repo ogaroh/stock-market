@@ -11,3 +11,11 @@
     display: inline-block;
     color: #09697a;
 }
+
+.positive {
+    color: #049b04;
+}
+
+.negative {
+    color: #d80707d8;
+}
